@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_margin="20dp">
+    <LinearLayout
+        android:id="@+id/imgLogin"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_below="@id/imgLogin"
+        android:id="@+id/etUser"
+        android:hint="@string/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:layout_below="@id/etUser"
+        android:id="@+id/etContrasena"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:hint="@string/contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <Button
+        android:layout_below="@id/etContrasena"
+        android:id="@+id/buttonEnter"
+        android:text="Ingresar"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+</RelativeLayout>
